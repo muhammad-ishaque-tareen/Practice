@@ -1,0 +1,186 @@
+
+* 
+{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+body 
+{
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  background-color: #f4f4f4;
+  color: #333;
+}
+
+
+.navbar 
+{
+  background-color:#005a87;
+  font-size: large;
+  display: flow-root;
+}
+
+.navbar ul 
+{
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  padding: 10px 0;
+}
+
+.navbar ul li 
+{
+  margin: 0 20px;
+}
+
+.navbar ul li a 
+{
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+.navbar ul li a:hover 
+{
+  text-decoration: underline;
+}
+
+
+.home 
+{
+  position: relative;
+  height: auto;
+  background-color: #000;
+}
+.about, .services, .testimonials 
+{  
+  margin-top: 20px;   
+}  
+.home .slider img 
+{
+  width: 100%;
+  height: 50%;
+  object-fit: cover; 
+}
+
+
+.about 
+{
+  padding: 50px 20px;
+  text-align: center;
+  background-color: #fff;
+  margin-top: -20px;
+}
+
+.about h2 
+{
+  margin-bottom: 20px;
+  font-size: 30px;
+  color: green;
+}
+
+.about p
+{
+  font-size: 18px;
+  color: #555;
+}
+.services 
+{
+  padding: 50px 20px;
+  background-color: #fff;
+  text-align: center;
+}
+
+.services h2 
+{
+  margin-bottom: 20px;
+  font-size: 30px;
+  color:green;
+}
+
+.post-container 
+{
+  display: flex;
+  justify-content: space-around;
+}
+
+.post 
+{
+  width: 30%;
+  padding: 20px;
+  background-color: #efefef;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.post h3
+{
+  margin-bottom: 10px;
+  color:red;
+}
+
+.post p 
+{
+  font-size: 16px;
+  color: #555;
+}
+
+.testimonials 
+{
+  padding: 50px 20px;
+  background-color: #f7f7f7;
+  text-align: center;
+}
+
+.testimonials h2 
+{
+  margin-bottom: 20px;
+  font-size: 30px;
+  color: green;
+}
+
+.testimonial-container 
+{
+  display: flex;
+  justify-content: space-around;
+  gap: 20px;
+}
+
+.testimonial 
+{
+  width: 30%;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.testimonial p 
+{
+  font-size: 16px;
+  font-style: italic;
+}
+
+.testimonial cite 
+{
+  display: block;
+  margin-top: 15px;
+  font-weight: bold;
+  color:#005a87;
+ 
+}
+
+
+.footer {
+  background-color: #005a87; 
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+
+.footer p {
+  font-size: 14px;
+}

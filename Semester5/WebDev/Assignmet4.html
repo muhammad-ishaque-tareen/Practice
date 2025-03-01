@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment 4</title>
+    <style>
+        * {  
+            margin: 0;  
+            padding: 0;  
+        }
+
+        body {  
+            font-family: 'Arial', sans-serif;  
+            background-color: #e9ecef;   
+            display: flex;  
+            justify-content: center;  
+            align-items: center;  
+            padding: 50px;  
+            margin: 200px;
+            flex-direction: column;  
+        }
+
+        .form-container {  
+            background-color:rgb(236, 139, 12);  
+            padding: 100px;  
+            border-radius: 12px; 
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);  
+            width: 50%;  
+            max-width: px; 
+            margin-bottom: 40px;  
+        }
+
+        h2 {  
+            text-align: center;  
+            color: #007bff;  
+            margin-bottom: 20px;  
+            font-weight: bold;  
+            font-size: 2.5rem; 
+        }
+
+        label {  
+            font-size: 22px;  
+            font-family: 'Courier New', Courier, monospace;
+            color:white;  
+            font-weight: bold;
+            margin-bottom: 8px;  
+            display: block;   
+        }
+
+        input[type="text"],  
+        input[type="email"],  
+        input[type="password"],  
+        input[type="tel"] {  
+            width: 100%;  
+            padding: 12px;  
+            margin-bottom: 15px; 
+            border: 1px solid #ced4da; 
+            border-radius: 8px;  
+            font-size: 1rem;  
+            transition: border-color 0.3s ease;  
+        }
+
+        input[type="text"]:focus,  
+        input[type="email"]:focus,  
+        input[type="password"]:focus,  
+        input[type="tel"]:focus {  
+            border-color: #007bff;  
+            outline: none;  
+        }
+
+        input[type="checkbox"] {  
+            margin-right: 10px;  
+        }
+
+        input[type="submit"] {  
+            width: 100%;  
+            padding: 12px;  
+            background-color: #007bff;  
+            color: white;  
+            border: none;  
+            border-radius: 8px;  
+            font-size: 1.1rem;  
+            cursor: pointer;  
+            transition: background-color 0.3s ease, transform 0.2s ease; 
+        }
+
+        input[type="submit"]:hover {  
+            background-color: #0056b3;  
+            transform: translateY(-2px); 
+        }
+
+        table {  
+            width: 80%; 
+            margin: 20px auto;  
+            border-collapse: collapse;  
+            background-color: #ffffff;  
+            border-radius: 8px;  
+            overflow: hidden;   
+        }
+
+        table th, table td {  
+            padding: 12px;   
+            text-align: left;  
+            border: 1px solid #ddd;  
+        }
+
+        table th {  
+            background-color: #007bff;  
+            color: white;  
+            font-weight: bold;  
+        }
+
+        table tr:nth-child(even) {  
+            background-color: #f2f2f2; 
+        }
+
+        table tr:hover {  
+            background-color: #d1e7fd; 
+        }
+
+        .task-container {
+            margin-top: 30px;
+            width: 80%;
+            background-color: #f1f1f1;
+            padding: 20px;
+            border-radius: 10px;
+        }
+
+        .task-container h3 {
+            color: #007bff;
+            font-size: 1.8rem;
+            margin-bottom: 15px;
+        }
+
+        .task-container p {
+            font-size: 1.2rem;
+            line-height: 1.6;
+            color: #333;
+        }
+    </style>
+</head>
+<body>
+    <h1>Task1: Form Creation </h1>
+    <div class="form-container">
+        <h2>Registration Form</h2>
+        <form action="" method="post">
+            <label for="firstName">First Name:</label>
+            <input type="text" id="firstName" placeholder="Muhammad Ishaque" name="Muhammad Ishaque" required>
+            
+            <label for="lastName">Last Name:</label>
+            <input type="text" id="lastName" placeholder="Tareen" name="Tareen">
+            
+            <label for="contact">Contact:</label>
+            <input type="tel" id="contact" name="contact" pattern="[0-9]{11}" required>
+            
+            <label for="email">Email:</label>
+            <input type="email" id="email" placeholder="afnanhafeeztareen@gmail.com" name="email" required>
+            
+            <label for="password">Password:</label>
+            <input type="password" id="password" placeholder="Use Strong Password!" name="password" required>
+            
+           
+            <div>
+                <label>Gender:</label>
+                <input type="radio" id="male" name="gender" value="Male" required> <b>Male</b>
+                <input type="radio" id="female" name="gender" value="Female" required> <b>Female</b>
+            </div>
+            <label for="agreement">
+                <input type="checkbox" id="agreement" name="agreement" required>
+                I agree to the terms and conditions
+            </label>
+            
+            <input type="submit" value="Submit">
+        </form>
+    </div>
+    <h1>Task2: Table Creation</h1> 
+
+    <table>
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Father's Name</th>
+                <th>Class</th>
+                <th>Roll Number</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Ahmed Ali</td>
+                <td>Mohammad Ali</td>
+                <td>10</td>
+                <td>101</td>
+            </tr>
+            <tr>
+                <td>Fatima Khan</td>
+                <td>Abdul Rehman Khan</td>
+                <td>12</td>
+                <td>102</td>
+            </tr>
+            <tr>
+                <td>Usman Tariq</td>
+                <td>Iqbal Tariq</td>
+                <td>9</td>
+                <td>103</td>
+            </tr>
+            <tr>
+                <td>Asad Baloch</td>
+                <td>Muhammad Ashraf</td>
+                <td>Bs Economics</td>
+                <td>30</td>
+            </tr>
+            <tr>
+                <td>Bilal Shah</td>
+                <td>Shahbaz Shah</td>
+                <td>10</td>
+                <td>105</td>
+            </tr>
+            <tr>
+                <td>Mahira Malik</td>
+                <td>Shah Malik</td>
+                <td>12</td>
+                <td>106</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <!-- Task 3: CSS Selectors -->
+    <div class="task-container">
+        <h3>Task 3: Paragraph on CSS Selectors</h3>
+        <p><strong>CSS Selectors</strong> are patterns used to select elements for styling in HTML documents. They allow developers to apply styles based on the attributes of elements, such as their id, class, or type. Here's an overview of key CSS selectors:</p>
+        
+        <ul>
+            <li><strong>ID Selector:</strong> The ID selector selects an element with a specific `id` attribute. The ID value must be unique within a page.
+                <br>Example: <code>#firstName { color: blue; }</code> will target the element with the id `firstName` and apply a blue color.
+            </li>
+            <li><strong>Class Selector:</strong> The class selector selects all elements with a specific class. Multiple elements can share the same class.
+                <br>Example: <code>.form-container { background-color: yellow; }</code> will apply a yellow background color to all elements with the class `form-container`..
+            </li>
+        </ul>
+
+        <p><strong>Difference Between ID and Class Selectors:</strong> An ID selector targets a unique element on the page, while a class selector can be used to target multiple elements. The ID selector has higher specificity than the class selector and is ideal for targeting single elements, whereas class selectors are better for applying styles to multiple elements.</p>
+    </div>
+
+    <!-- Task 4: CSS Box Model -->
+    <div class="task-container">
+        <h3>Task 4: Paragraph on CSS Box Model</h3>
+        <p><strong>The CSS Box Model</strong> represents the structure of an element's content box and its surrounding padding, border, and margin. It is essential for controlling the layout and spacing of elements on a web page. The Box Model includes the following components:</p>
+        
+        <ul>
+            <li><strong>Padding:</strong> Padding is the space between the content of an element and its border. It is used to create space inside the element.
+            </li>
+            <li><strong>Border:</strong> The border is the line that wraps around the padding (if any) and the content. It can be styled in various ways (width, color, and style).
+            </li>
+            <li><strong>Margin:</strong> The margin is the space outside the element, separating it from other elements on the page.
+            </li>
+        </ul>
+
+        <p>The Box Model allows you to control the layout of elements by adjusting the size and space around them. Understanding the Box Model is crucial for effective web design.</p>
+    </div>
+</body>
+</html>

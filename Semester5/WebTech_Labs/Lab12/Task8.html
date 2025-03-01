@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>String Manipulation</title>
+</head>
+<body>
+    <h1 style="color: red; font-weight: 100;"><strong><u>String Manipulation</u></strong></h1>
+    <script>
+        let userInput = prompt("Enter a string:");  
+        let upperCase = userInput.toUpperCase();  
+        let charCount = userInput.length;  
+        let reversed = userInput.split("").reverse().join("");  
+
+        alert("Uppercase: " + upperCase +  "\nCharacter Count: " + charCount + "\nReversed: " + reversed);
+    </script>
+</body>
+</html>

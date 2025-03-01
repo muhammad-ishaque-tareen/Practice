@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Your Portfolio</title>
+  <link rel="stylesheet" href="style.css"> <!-- Link to the CSS file -->
+</head>
+<body>
+  <header>
+    <div class="header-container">
+      <div class="profile">
+        <!-- Image of yourself (update the source to your actual image path) -->
+        <img src="your-image.jpg" alt="Mr. IT's photo" class="profile-img">
+        <h2 class="name">Mr. IT</h2>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="#about">About</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <section id="about">
+    <h2>About Me</h2>
+    <p>Hi, I'm Mr. IT, a passionate beginner web developer with skills in Java, HTML, CSS, and Frontend development!</p>
+  </section>
+
+  <section id="skills">
+    <h2>My Skills</h2>
+    <ul>
+      <li>Java</li>
+      <li>HTML</li>
+      <li>CSS</li>
+      <li>Frontend Development</li>
+      <li>JavaScript (Learning)</li>
+    </ul>
+  </section>
+
+  <section id="projects">
+    <h2>My Projects</h2>
+    <div class="project">
+      <h3>Project 1</h3>
+      <p>Description of your project.</p>
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2>Contact Me</h2>
+    <form id="contactForm">
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" required>
+      <br>
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required>
+      <br>
+
+      <label for="message">Message:</label>
+      <textarea id="message" name="message" required></textarea>
+      <br>
+
+      <button type="submit">Send Message</button>
+    </form>
+    <p id="formResponse"></p>
+  </section>
+
+  <footer>
+    <p>Contact: [Your Email]</p>
+    <p>&copy; <span id="currentYear"></span> Your Portfolio</p>
+  </footer>
+</body>
+</html>

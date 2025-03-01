@@ -1,0 +1,36 @@
+ 
+ a:link 
+{  
+    color: blue;  
+}  
+
+a:visited 
+{  
+    color: gray;  
+}  
+
+a:hover 
+{  
+    text-decoration: underline;
+}
+a:active 
+{  
+    color: red;   
+}  
+
+
+input:focus 
+{  
+    border: 2px solid green; 
+}
+
+input:disabled 
+{  
+    background-color: lightgray; 
+}
+
+
+li:nth-child(odd) 
+{  
+    color: blue; 
+}

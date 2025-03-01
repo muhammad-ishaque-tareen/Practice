@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Doctor Database Management</title>
+    <style>
+        /* General Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Roboto', sans-serif;
+            background:cross-fade() ;
+            color: #444;
+            padding: 0;
+            margin: 5px;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 700px;
+            margin: 50px auto;
+            padding: 50px;
+            background-color: white;
+            border-radius: 12px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            text-align: center;
+            color: #2c3e50;
+            margin-bottom: 20px;
+        }
+
+        h2 {
+            font-size: 1.6rem;
+            text-align: center;
+            color: #3498db; /* Blue color */
+            margin-bottom: 20px;
+        }
+
+        /* Form Section Styling */
+        .form-section {
+            margin-top: 20px;
+            padding: 25px;
+            background-color: #f9f9f9;
+            border-radius: 10px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        input[type="text"],
+        input[type="number"],
+        input[type="tel"],
+        input[type="submit"] {
+            width: 100%;
+            padding: 15px;
+            border: 2px solid #ddd;
+            border-radius: 8px;
+            font-size: 1.1rem;
+            color: #333;
+            background-color: #f9f9f9;
+            transition: all 0.3s ease;
+        }
+
+        input[type="text"]:focus,
+        input[type="number"]:focus,
+        input[type="tel"]:focus {
+            border-color: #3498db;
+            outline: none;
+            background-color: #fff;
+        }
+
+        input[type="submit"] {
+            background-color: #3498db;
+            color: white;
+            font-weight: bold;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            border: 2px solid #3498db;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #3498db;
+        }
+
+        input[type="submit"]:active {
+            background-color: #2471a3;
+        }
+
+        /* Centered Content */
+        .center {
+            text-align: center;
+        }
+
+        .form-section input[type="text"],
+        .form-section input[type="number"],
+        .form-section input[type="tel"] {
+            max-width: 100%;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .container {
+                width: 100%;
+                padding: 5px;
+            }
+
+            h1 {
+                font-size: 2rem;
+            }
+
+            h2 {
+                font-size: 1.4rem;
+            }
+
+            input[type="submit"] {
+                padding: 12px;
+            }
+        }
+
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>Doctor Database Management</h1>
+
+        <!-- Display All Data Button -->
+        <div class="form-section center">
+            <h2>Click to View All Data in DOCTOR Table</h2>
+            <form action="servlet1" method="post">
+                <input type="submit" value="Click Here!"/>
+            </form>
+        </div>
+
+        <!-- Insert Record Form -->
+        <div class="form-section">
+            <h2>Insert a Record into the DOCTOR Table</h2>
+            <form action="InsertRecordServlet" method="post">
+                <input type="text" name="column1" placeholder="DID" required>
+                <input type="text" name="column2" placeholder="DName" required>
+                <input type="text" name="column3" placeholder="DDomain" required>
+                <input type="number" name="column4" placeholder="DSalary" required>
+                <input type="text" name="column5" placeholder="DExperience" required>
+                <input type="number" name="column6" placeholder="DFee" required>
+                <input type="text" name="column7" placeholder="DAddress" required>
+                <input type="tel" name="column8" placeholder="DPhone" required>
+                <input type="submit" value="Insert Record">
+            </form>
+        </div>
+
+        <!-- Update Record Form -->
+        <div class="form-section">
+            <h2>Update Data in the DOCTOR Table</h2>
+            <form action="UpdateNameServlet" method="post">
+                <input type="text" name="id" placeholder="ID (to update)" required>
+                <input type="text" name="DName" placeholder="New DName">
+                <input type="text" name="DDomain" placeholder="New DDomain">
+                <input type="number" name="DSalary" placeholder="New DSalary">
+                <input type="text" name="DExperience" placeholder="New DExperience">
+                <input type="number" name="DFee" placeholder="New DFee">
+                <input type="text" name="DAddress" placeholder="New DAddress">
+                <input type="tel" name="DPhone" placeholder="New DPhone">
+                <input type="submit" value="Update Record">
+            </form>
+        </div>
+
+        <!-- Delete Record Form -->
+        <div class="form-section">
+            <h2>Delete a Record from the DOCTOR Table</h2>
+            <form action="DeleteRecordServlet" method="post">
+                <input type="text" name="DID" placeholder="DID (to delete)" required>
+                <input type="submit" value="Delete Record">
+            </form>
+        </div>
+    </div>
+
+</body>
+</html>

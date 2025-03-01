@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment 7</title>
+    <style>
+        p {
+            padding: 32px;
+            font-size: 18px;
+
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Assignment 7: Change Text and Background Color</h1>
+
+    <p id="myParagraph">
+          My name is Muhammad Ishaque Tareen. <br> 
+          I belong to District Harnai, Balochistan. <br>
+          Currently , I am doing  5th Semester at Akhuwat College University, Kasur. <br>
+          I like Web Development course. <br>
+          I am doing my best to perform every Assignment in best way. <br>
+
+    </p>
+
+    
+    <button onclick="changeTextColor()">Change Text Color</button>
+
+    <script>
+        function changeTextColor() 
+        {
+            var paragraph = document.getElementById("myParagraph");
+            
+            paragraph.style.color = getRandomTextColor();
+            
+            paragraph.style.backgroundColor = getRandombackgroundcolor();
+        }
+
+        function getRandomTextColor()
+        {
+            var letters = '23456789ABCDEF'; 
+            var color = '#';
+            for (var i = 0; i < 6; i++) {
+                color += letters[Math.floor(Math.random() * 14)];
+            }
+            return color;
+        }
+
+        
+        function getRandombackgroundcolor() 
+        {
+            var letters = '89ABCDEF'; 
+            var color = '#';
+            for (var i = 0; i < 6; i++) 
+            {
+        
+                color += letters[Math.floor(Math.random() * 8)];
+            }
+            return color;
+        }
+    </script>
+
+</body>
+</html>

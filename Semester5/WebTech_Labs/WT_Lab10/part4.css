@@ -1,0 +1,29 @@
+
+.ishaq::first-letter 
+{  
+    color: purple;  
+    font-size: 3em; 
+}  
+
+.ishaq::first-line {  
+    font-style: italic;  
+    font-weight: bold;  
+}  
+
+  
+.important-message::before {  
+    content: "Important! ";
+    color: red;  
+}  
+
+.important-message::after 
+{  
+    content: " Check it!"; 
+    color: blue; 
+}  
+
+.tareen::selection 
+{  
+    background: yellow;  
+    color: red;  
+}

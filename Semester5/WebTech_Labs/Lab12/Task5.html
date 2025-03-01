@@ -1,0 +1,32 @@
+<!DOCTYPE html>  
+<html lang="en">  
+<head>  
+    <meta charset="UTF-8">  
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">  
+    <title>Event Handling</title>  
+  
+</head>  
+<body>  
+    <p id="text">This is my paragraph and my name is muhammad ishaque tareen <br>.</p>  
+    <button onclick="changeTextColor() ">Change Text</button> 
+    <script>
+        function changeTextColor() 
+        {
+            var paragraph = document.getElementById("text");
+            paragraph.style.color = getRandomTextColor();
+            
+        }
+
+        function getRandomTextColor()
+        {
+            var letters = '23456789ABCDEF'; 
+            var color = '#';
+            for (var i = 0; i < 6; i++) {
+                color += letters[Math.floor(Math.random() * 14)];
+            }
+            return color;
+        }
+
+    </script> 
+</body>  
+</html>

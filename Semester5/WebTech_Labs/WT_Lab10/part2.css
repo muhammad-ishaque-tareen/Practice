@@ -1,0 +1,17 @@
+
+
+.descendant p {  
+    background-color:yellow ; 
+
+}
+.descendant > p {  
+    color: red; 
+
+}
+.next-sibling + p {  
+    border: 1px dashed black; 
+}
+.subsequent-sibling ~ p 
+{  
+    font-style: italic;  
+}
