@@ -46,6 +46,71 @@ print("Write a program to find out the occurrence of 'S' in name \n")
 print(name.find('S'))
 
 
+# Conditional statements
 
+age=17
+if(age>=18):
+        print("You can vote")
+        print("you can drive")
+else:
+        print("You can not drive")
 
+#multiple conditional statements
+light=" "
+if(light=="Green"):
+    print("Do not stop")
+elif(light=="Red"):
+    print(" stop")
+elif(light=="Yellow"):
+    print("Slow") #indentation is used in python except {}
+else:
+    print("Light system does not work be aware")
 
+print("Write a program that take marks from user and prints his grade")
+marks=float(input("Enter Your marks: "))
+if(marks>=90):
+    print(" Your Grade is A")
+
+elif(marks<90 and marks>=80):
+    print(" Your Grade is B")
+elif(marks<80 and marks>=70):
+    print(" Your Grade is C")
+elif(marks<70 and marks>=33):
+    print(" Your Grade is D")
+else:
+    print(" You are Fail")
+
+#Python also allows the nesting statements
+age_=15
+if(age_>18):
+    if(age_>=80):
+        print("You cannot drive because you are old")
+    else:
+        print("You can drive")
+else:
+    print("You can't drive.")
+
+print("Write a program to check if a number entered by user is odd or even")
+inn=int(input("Enter a number: "))
+if((inn%2)!=0):
+    print("You entered odd number.")
+else:
+    print("You entered even number.")
+
+print("WAP to check if the number is multiple of 7 or not: \n")
+inp=int(input("Enter the number: "))
+if((inp%7)==0):
+    print("Yes, Number is multiple of 7.")
+else:
+    print("No number is not multiple of 7.")
+
+numbers=[]
+for i in range(8):
+    num=int(input(f"Enter number{ i+1}: "))
+    numbers.append(num)
+greatest_num=numbers[0]
+for number in numbers:
+    if(number>greatest_num):
+        greatest_num=number
+
+print(f"The greatest number is : {greatest_num}")
