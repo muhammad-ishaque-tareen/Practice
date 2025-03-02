@@ -3,11 +3,11 @@
 print("String is a datatype that stores a sequence of characters")
 #Basic Operations. 1) concatenation like "hello"+ "world"-------> helloworld
 #ii) length of the string like len(str)
-str1="This is a string .\n you can create string in double quotes"
+str1="This is a string .\n you can create's string in double quotes"
 print(str1)
 str2='this is string 2 and you can create str in single quotes also'
 print(str2)
-str3="""This is string 3 and you can create using triple quotes"""
+str3="""This is string 3 and you can "create" using triple quotes"""
 print(str3)
 
 # Escape sequence characters are used for next line in python like \n for next line etc
